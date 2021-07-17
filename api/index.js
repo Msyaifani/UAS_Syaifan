@@ -6,7 +6,7 @@ const model = require('./sdk/model.js');
 
 // Bot Setting
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1722851796:AAHVZbpkeTQtmIcQo6qOPb9Mc9zPXYUWLXM'
+const token = '1776524070:AAFT-axXNAMXssJdBSOVz1lfmT2rPgFaOBc'
 const bot = new TelegramBot(token, {polling: true});
 
 
@@ -25,7 +25,7 @@ state = 0;
 bot.onText(/\/predict/, (msg) => { 
     bot.sendMessage(
         msg.chat.id,
-        `inputkan nilai x1|x2|x3 contohnya 25|42|87`
+        `Silahkan berikan nilai x1|x2|x3 contohnya 25|42|87`
     );
     state = 1;
 });
